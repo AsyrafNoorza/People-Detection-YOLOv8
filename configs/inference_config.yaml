@@ -1,0 +1,42 @@
+# YOLOv8 People Detection Inference Configuration
+
+# Model Configuration
+model:
+  path: "models/best.pt"  # Path to trained model
+  device: "auto"  # auto, cpu, 0, 1, 2, etc.
+  half: false  # Use FP16 inference
+
+# Detection Parameters
+detection:
+  conf_threshold: 0.5  # Confidence threshold
+  iou_threshold: 0.45  # IoU threshold for NMS
+  max_det: 300  # Maximum detections per image
+  agnostic_nms: false  # Class-agnostic NMS
+
+# Input/Output
+io:
+  input_path: ""  # Path to input image/directory
+  output_dir: "results"  # Output directory
+  save_txt: false  # Save results to txt files
+  save_conf: false  # Save confidences in txt files
+  save_crop: false  # Save cropped prediction boxes
+  show_labels: true  # Show labels on image
+  show_conf: true  # Show confidence on image
+  line_width: 3  # Bounding box line width
+
+# Visualization
+visualization:
+  colors: null  # Custom colors for classes
+  font_size: 12  # Font size for labels
+  font_thickness: 2  # Font thickness for labels
+  box_thickness: 2  # Bounding box thickness
+
+# Batch Processing
+batch:
+  batch_size: 1  # Batch size for processing
+  stream: false  # Stream mode for video/webcam
+
+# Performance
+performance:
+  verbose: true  # Verbose output
+  profile: false  # Profile inference speed

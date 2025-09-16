@@ -1,0 +1,32 @@
+# YOLOv8 People Detection - Core Dependencies
+
+# Core ML Framework
+ultralytics==8.0.196
+torch>=2.8.0
+torchvision>=0.23.0
+
+# Computer Vision
+opencv-python>=4.12.0
+Pillow>=11.3.0
+
+# Data Processing
+numpy>=2.2.6
+pandas>=2.3.2
+scipy>=1.16.2
+
+# Visualization
+matplotlib>=3.10.6
+seaborn>=0.13.2
+
+# Utilities
+tqdm>=4.67.1
+pyyaml>=6.0.2
+
+# Machine Learning Utilities
+scikit-learn>=1.7.2
+
+# Optional: GPU Support (automatically installed with PyTorch)
+# nvidia-cublas-cu12
+# nvidia-cuda-nvrtc-cu12
+# nvidia-cuda-runtime-cu12
+# nvidia-cudnn-cu12
